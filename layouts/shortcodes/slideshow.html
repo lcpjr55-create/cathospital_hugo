@@ -1,0 +1,31 @@
+<div class="slideshow-container" id="slideshow-{{ .Get "id" | default "default" }}">
+    {{ $images := split (.Get "images") "," }}
+    {{ range $index, $image := $images }}
+    <div class="mySlides fade" style="display: {{ if eq $index 0 }}block{{ else }}none{{ end }};">
+        <img src="{{ $image | safeURL }}" style="width:100%; border-radius: 8px; transition: opacity 1.5s ease-in-out;">
+    </div>
+    {{ end }}
+</div>
+<script>
+(function() {
+    let slideIndex = 0;
+    const containerId = "slideshow-{{ .Get "id" | default "default" }}";
+    const slideshow = document.getElementById(containerId);
+    if (!slideshow) return;
+    
+    const slides = slideshow.getElementsByClassName("mySlides");
+    if (slides.length <= 1) return;
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4500); 
+    }
+    
+    showSlides();
+})();
+</script>

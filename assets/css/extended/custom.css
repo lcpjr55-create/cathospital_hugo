@@ -1,0 +1,148 @@
+:root {
+    --theme: #003366;
+    --primary: #003366;
+    --secondary: #004488;
+    --link-color: #003366;
+    --link-hover-color: #002244;
+}
+
+/* Layout Tightening: concise medical brochure feel */
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 25px;
+}
+
+/* Center the Logo and Navigation */
+.nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    height: 100px !important;
+    width: auto !important;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu a {
+    color: var(--link-color) !important;
+    font-weight: 600;
+}
+
+/* Static Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-emblem-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-emblem {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    background-color: white;
+    object-fit: cover !important; /* Changed to cover for perfect circle */
+}
+
+.hero-title {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 25px !important;
+    color: white !important;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--theme);
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-button:hover {
+    background-color: #002244;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* Content Spacing */
+.post-content h1, .post-content h2, .post-content h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    margin-bottom: 12px;
+}
+
+/* Slideshow Container (Legacy, can be removed later) */
+.slideshow-container {
+    display: none; /* Hidden as per hero migration */
+}

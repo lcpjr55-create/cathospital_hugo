@@ -1,0 +1,93 @@
+baseURL = 'https://www.cathospitaldurhamch.com/'
+languageCode = 'en-us'
+title = 'The Cat Hospital of Durham & Chapel Hill'
+theme = "PaperMod"
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
+    showReadingTime = true
+    displayFullLangName = true
+
+    [params.label]
+        text = "Home"
+        icon = "images/7/5/8/2/75820791/logo.jpg"
+        iconHeight = 100
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 10
+
+[[menu.main]]
+    name = "Our Services"
+    url = "/our-services"
+    weight = 20
+
+[[menu.main]]
+    name = "Client Center"
+    url = "/client-center"
+    weight = 30
+
+[[menu.main]]
+    identifier = "meet-our-team"
+    name = "Meet Our Team"
+    parent = "About"
+    url = "/meet-our-team"
+    weight = 11
+
+[[menu.main]]
+    identifier = "tour-practice"
+    name = "Tour Our Practice"
+    parent = "About"
+    url = "/tour-our-practice"
+    weight = 12
+
+[[menu.main]]
+    identifier = "medical-services"
+    name = "Medical Services"
+    parent = "Our Services"
+    url = "/medical-services"
+    weight = 21
+
+[[menu.main]]
+    identifier = "boarding"
+    name = "Boarding"
+    parent = "Our Services"
+    url = "/boarding"
+    weight = 22
+
+[[menu.main]]
+    identifier = "emergency-care"
+    name = "Emergency Care"
+    parent = "Our Services"
+    url = "/emergency-care"
+    weight = 23
+
+[[menu.main]]
+    identifier = "forms"
+    name = "Forms"
+    parent = "Client Center"
+    url = "/forms"
+    weight = 31
+
+[[menu.main]]
+    identifier = "appointments"
+    name = "Appointments"
+    parent = "Client Center"
+    url = "/appointments"
+    weight = 32
+
+[[menu.main]]
+    identifier = "payment-options"
+    name = "Payment Options"
+    parent = "Client Center"
+    url = "/payment-options"
+    weight = 33
+
+[[menu.main]]
+    identifier = "emergency-case"
+    name = "In Case of Emergency"
+    parent = "Client Center"
+    url = "/in-case-of-emergency"
+    weight = 34
