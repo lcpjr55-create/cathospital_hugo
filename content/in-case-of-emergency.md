@@ -1,33 +1,38 @@
 ---
-title: "In Case of  Emergency"
-date: 2026-04-15
+title: "In Case of Emergency"
 draft: false
 ---
 
 ## In Case of Emergency
 
-If you have a medical emergency during working hours, please come directly to our hospital. If you can, please call us to let us know you are on the way. That way we can be better prepared for your arrival.  
-  
-There are a few options for after-hours emergency care in the Triangle area. Please try to choose the one that is closest to you and call ahead to let them know that you are coming so that they know you are on your way. You may also call our number after hours and be routed directly to Triangle Veterinary Referral Hospital in Durham.  
+If you have a medical emergency during business hours, please come directly to our hospital. Call us at **(919) 489-5142** so we can prepare for your arrival.
 
+For after-hours emergencies, please contact one of the 24/7 emergency facilities below. Choose the one closest to you and call ahead before you leave.
 
-## [The North Carolina State University ](http://trianglevrh.com/)
+You may also call our number after hours and be routed directly to Triangle Veterinary Referral Hospital in Durham.
 
-* * *
+---
 
-[The North Carolina State University Veterinary Health Complex](http://trianglevrh.com/) has a small animal emergency department (open 24 hours a day, 7 days a week). They are in Raleigh and can be reached at 919-513-6911. | 
+### NC State University Veterinary Health Complex — Raleigh
 
-## [Triangle Veterinary Referral Hospital](http://trianglevrh.com/)
+[NC State Veterinary Health Complex](https://cvm.ncsu.edu/vhc/) has a small animal emergency department open 24 hours a day, 7 days a week.
 
-* * *
+**Phone:** 919-513-6911
 
-[Triangle Veterinary Referral Hospital](http://trianglevrh.com/) is open 24 hours a day, 7 days a week. They are located at 608 Morreene Road in Durham. Their phone number is 919-489-0615.  
----|---  
-  
-## [Veterinary Specialty Hospital](http://www.vshcarolinas.com/)
+---
 
-* * *
+### Triangle Veterinary Referral Hospital — Durham
 
-[Veterinary Specialty Hospital](http://www.vshcarolinas.com/) has three locations. The Durham location is now open in the Hope Valley Shopping Center at the intersection of Highway 751 and Highway 54. Their number is 919-600-6600.   
-  
-​There is also one in Raleigh and one in Cary. They are also open 24 hours a day, 7 days a week. The Cary office is 919-233-4911. The Raleigh office is 919-861-0109.
+[Triangle Veterinary Referral Hospital](http://trianglevrh.com/) is open 24 hours a day, 7 days a week, located at 608 Morreene Road, Durham.
+
+**Phone:** 919-489-0615
+
+---
+
+### Veterinary Specialty Hospital — Multiple Locations
+
+[Veterinary Specialty Hospital](http://www.vshcarolinas.com/) has three Triangle locations, all open 24 hours a day, 7 days a week.
+
+- **Durham** (Hope Valley Shopping Center, Hwy 751 & Hwy 54): 919-600-6600
+- **Cary:** 919-233-4911
+- **Raleigh:** 919-861-0109

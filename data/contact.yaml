@@ -1,0 +1,14 @@
+name: "The Cat Hospital of Durham & Chapel Hill"
+phone: "(919) 489-5142"
+fax: "(919) 493-4600"
+address: "121 S. Estes Drive, Suite 205D"
+city: "Chapel Hill, NC 27514"
+hours:
+  weekdays: "Monday–Friday: 8:00 am – 6:00 pm"
+  saturday: "Saturday: 8:00 am – 12:00 pm"
+  sunday: "Sunday: Closed"
+  note: "By appointment only"
+emergency:
+  name: "Triangle Veterinary Referral Hospital"
+  address: "608 Morreene Road, Durham, NC 27705"
+  phone: "(919) 489-0615"

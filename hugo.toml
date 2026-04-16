@@ -5,89 +5,159 @@ theme = "PaperMod"
 
 [params]
     defaultTheme = "auto"
-    showCodeCopyButtons = true
-    showReadingTime = true
-    displayFullLangName = true
+    ShowReadingTime = false
+    ShowShareButtons = false
+    ShowPostNavLinks = false
+    ShowBreadCrumbs = false
 
     [params.label]
         text = "Home"
-        icon = "images/7/5/8/2/75820791/logo.jpg"
-        iconHeight = 100
+        icon = "/images/logo_1.jpeg"
+        iconHeight = 60
 
+# ── About ─────────────────────────────────────────────────────
 [[menu.main]]
+    identifier = "about"
     name = "About"
     url = "/about"
     weight = 10
 
 [[menu.main]]
-    name = "Our Services"
-    url = "/our-services"
-    weight = 20
-
-[[menu.main]]
-    name = "Client Center"
-    url = "/client-center"
-    weight = 30
-
-[[menu.main]]
     identifier = "meet-our-team"
     name = "Meet Our Team"
-    parent = "About"
+    parent = "about"
     url = "/meet-our-team"
     weight = 11
 
 [[menu.main]]
     identifier = "tour-practice"
     name = "Tour Our Practice"
-    parent = "About"
+    parent = "about"
     url = "/tour-our-practice"
     weight = 12
 
+# ── Medical Services ──────────────────────────────────────────
 [[menu.main]]
     identifier = "medical-services"
     name = "Medical Services"
-    parent = "Our Services"
     url = "/medical-services"
+    weight = 20
+
+[[menu.main]]
+    identifier = "wellness"
+    name = "Wellness & Preventive Care"
+    parent = "medical-services"
+    url = "/wellness-and-preventative-care"
     weight = 21
 
 [[menu.main]]
-    identifier = "boarding"
-    name = "Boarding"
-    parent = "Our Services"
-    url = "/boarding"
+    identifier = "vaccinations"
+    name = "Vaccinations"
+    parent = "medical-services"
+    url = "/vaccinations"
     weight = 22
 
 [[menu.main]]
-    identifier = "emergency-care"
-    name = "Emergency Care"
-    parent = "Our Services"
-    url = "/emergency-care"
+    identifier = "dental-care"
+    name = "Dental Care"
+    parent = "medical-services"
+    url = "/dental-care"
     weight = 23
 
 [[menu.main]]
-    identifier = "forms"
-    name = "Forms"
-    parent = "Client Center"
-    url = "/forms"
-    weight = 31
+    identifier = "surgical-care"
+    name = "Surgical Care"
+    parent = "medical-services"
+    url = "/surgical-care"
+    weight = 24
+
+[[menu.main]]
+    identifier = "geriatric-medicine"
+    name = "Geriatric Medicine"
+    parent = "medical-services"
+    url = "/geriatric-medicine"
+    weight = 25
+
+[[menu.main]]
+    identifier = "radiology"
+    name = "Radiological Examinations"
+    parent = "medical-services"
+    url = "/radiological-examinations"
+    weight = 26
+
+[[menu.main]]
+    identifier = "ultrasound"
+    name = "Ultrasound"
+    parent = "medical-services"
+    url = "/ultrasonic-examinations"
+    weight = 27
+
+# ── Boarding (direct link, no dropdown) ───────────────────────
+[[menu.main]]
+    identifier = "boarding"
+    name = "Boarding"
+    url = "/boarding"
+    weight = 30
+
+# ── Client Center ─────────────────────────────────────────────
+[[menu.main]]
+    identifier = "client-center"
+    name = "Client Center"
+    url = "/client-center"
+    weight = 40
 
 [[menu.main]]
     identifier = "appointments"
     name = "Appointments"
-    parent = "Client Center"
+    parent = "client-center"
     url = "/appointments"
-    weight = 32
+    weight = 41
+
+[[menu.main]]
+    identifier = "forms"
+    name = "Forms"
+    parent = "client-center"
+    url = "/forms"
+    weight = 42
 
 [[menu.main]]
     identifier = "payment-options"
     name = "Payment Options"
-    parent = "Client Center"
+    parent = "client-center"
     url = "/payment-options"
-    weight = 33
+    weight = 43
 
 [[menu.main]]
-    identifier = "emergency-case"
+    identifier = "emergency-care"
+    name = "Emergency Care"
+    parent = "client-center"
+    url = "/emergency-care"
+    weight = 44
+
+[[menu.main]]
+    identifier = "in-case-of-emergency"
     name = "In Case of Emergency"
-    parent = "Client Center"
+    parent = "client-center"
     url = "/in-case-of-emergency"
-    weight = 34
+    weight = 45
+
+[[menu.main]]
+    identifier = "health-certificate"
+    name = "International Health Certificate"
+    parent = "client-center"
+    url = "/international-health-certificate"
+    weight = 46
+
+[[menu.main]]
+    identifier = "educational-resources"
+    name = "Educational Resources"
+    parent = "client-center"
+    url = "/educational-resources"
+    weight = 47
+
+[[menu.main]]
+    identifier = "pet-portal"
+    name = "Pet Health Portal"
+    parent = "client-center"
+    url = "/petly---online-pet-pages"
+    weight = 48

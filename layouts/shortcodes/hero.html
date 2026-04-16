@@ -1,12 +1,22 @@
 <section class="hero-section" style="background-image: url('{{ .Get "image" | relURL }}');">
     <div class="hero-overlay">
         <div class="hero-content">
-            <div class="hero-emblem-container">
-                <img src="{{ .Get "emblem" | relURL }}" alt="Practice Emblem" class="hero-emblem">
+            {{- with .Get "emblem" }}
+            <div class="hero-emblem-wrap">
+                <img src="{{ . | relURL }}" alt="{{ site.Title }} logo" class="hero-emblem">
             </div>
-            <h1 class="hero-title">{{ .Get "title" }}</h1>
+            {{- end }}
+            {{- with .Get "tagline" }}
+            <p class="hero-tagline">{{ . }}</p>
+            {{- end }}
             <div class="hero-actions">
-                <a href="{{ .Get "buttonLink" }}" class="hero-button" target="_blank">{{ .Get "buttonText" }}</a>
+                <a href="/appointments" class="hero-button">Book an Appointment</a>
+                {{- with .Get "buttonLink" }}
+                <a href="{{ . }}" class="hero-button hero-button--secondary"
+                   {{- if hasPrefix . "http" }} target="_blank" rel="noopener"{{- end }}>
+                    {{ $.Get "buttonText" | default "Client Portal" }}
+                </a>
+                {{- end }}
             </div>
         </div>
     </div>

@@ -1,43 +1,32 @@
 ---
 title: "Client Center"
-date: 2026-04-15
 draft: false
 ---
 
-## Client Center  
+## Client Center
 
+Everything you need before, during, and after your visit.
 
-## Forms
+### [Appointments](/appointments)
+Schedule a visit and learn about our appointment policies, carrier tips, and how to prepare your cat.
 
-Forms to e-mail or print and fill out in advance of your visit  
-[ Learn More ](/forms) | 
+### [Forms](/forms)
+Download or email forms in advance to save time at check-in.
 
-## Appointments
+### [Payment Options](/payment-options)
+We accept Visa, Mastercard, Apple Pay, and cash. Checks accepted on a limited basis.
 
-Information about your appointment  
-[ Learn More ](/appointments) | 
+### [Emergency Care](/emergency-care)
+Information on what to do if your cat needs urgent attention during business hours.
 
-## Payment Options
+### [In Case of Emergency](/in-case-of-emergency)
+After-hours emergency facilities in the Triangle area, available 24/7.
 
-We accept Visa, MasterCard, Apple Pay, and cash. Checks are accepted on a limited basis.  
-[ Learn More ](/payment-options)  
----|---|---  
-  
-* * *
+### [International Health Certificate](/international-health-certificate)
+Traveling internationally with your cat? We can help with the required documentation.
 
-##  Emergency  
+### [Educational Resources](/educational-resources)
+Articles and information on feline health, toxins, and preventive care.
 
-
-Please call ahead if your emergency is during business hours.  
-[ Learn More ](/in-case-of-emergency) | 
-
-## Educational Resources
-
-Explore resources pertaining to feline care and medicine.  
-[ Learn More ](/educational-resources) | 
-
-##  Pet Pages
-
-Create a personal health page for your pet.  
-[ Learn More ](/petly---online-pet-pages)  
----|---|---
+### [Pet Health Portal](/petly---online-pet-pages)
+Access your cat's health records and stay connected between visits via Petly.

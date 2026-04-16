@@ -1,43 +1,83 @@
+/* ============================================================
+   BRAND ACCENT — do NOT override --theme (page bg) or
+   --primary (body text); those are PaperMod's light/dark vars.
+   Only define what's specific to this site.
+   ============================================================ */
 :root {
-    --theme: #003366;
-    --primary: #003366;
-    --secondary: #004488;
-    --link-color: #003366;
+    --cat-navy:       #003366;
+    --cat-navy-deep:  #002244;
+    --cat-navy-glass: rgba(0, 51, 102, 0.80);
+    --link-color:     #003366;
     --link-hover-color: #002244;
 }
 
-/* Layout Tightening: concise medical brochure feel */
+/* ============================================================
+   PHONE STRIP
+   ============================================================ */
+.header-phone {
+    background-color: var(--cat-navy);
+    color: rgba(255,255,255,0.90);
+    text-align: center;
+    padding: 6px 20px;
+    font-size: 0.82rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-phone a {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.02em;
+}
+
+.header-phone a:hover {
+    text-decoration: underline;
+}
+
+.header-phone-hours {
+    color: rgba(255,255,255,0.70);
+    font-size: 0.78rem;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
 .main {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 15px;
 }
 
-.header {
-    margin-bottom: 20px;
-}
-
 .footer {
     margin-top: 25px;
 }
 
-/* Center the Logo and Navigation */
+/* ============================================================
+   HEADER: LOGO CENTERED ABOVE NAV
+   ============================================================ */
 .nav {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 0;
+    padding: 16px 0;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .logo img {
-    height: 100px !important;
+    height: 60px !important;
     width: auto !important;
 }
 
@@ -45,18 +85,115 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    gap: 4px;
 }
 
-.menu a {
-    color: var(--link-color) !important;
+.menu > li > a {
+    color: var(--cat-navy) !important;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
-/* Static Hero Section */
+/* Dark mode: nav links need to be light, not navy-on-dark */
+[data-theme="dark"] .menu > li > a,
+[data-theme="dark"] .dropdown-caret {
+    color: var(--primary) !important;
+}
+
+/* ============================================================
+   DROPDOWN NAVIGATION (CSS-only, no JS)
+   ============================================================ */
+
+/* PaperMod sets overflow-x: auto on .menu which clips absolute dropdowns */
+#menu {
+    overflow: visible !important;
+}
+
+li.has-dropdown {
+    position: relative;
+}
+
+.dropdown-caret {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--cat-navy);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+li.has-dropdown:hover .dropdown-caret {
+    transform: rotate(180deg);
+}
+
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    background: var(--entry, #fff);
+    border-top: 3px solid var(--cat-navy);
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    min-width: 210px;
+    z-index: 200;
+    padding: 6px 0;
+    list-style: none;
+    margin: 0;
+}
+
+/* Reset PaperMod's li+li margin so dropdown items don't indent */
+ul.dropdown-menu li {
+    margin-inline-start: 0 !important;
+    padding: 0;
+}
+
+li.has-dropdown:hover ul.dropdown-menu,
+li.has-dropdown:focus-within ul.dropdown-menu {
+    display: block;
+}
+
+ul.dropdown-menu li a {
+    display: block;
+    padding: 9px 18px;
+    color: var(--cat-navy) !important;
+    font-size: 0.88rem;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+ul.dropdown-menu li a:hover,
+ul.dropdown-menu li a.active {
+    background-color: rgba(0, 51, 102, 0.07);
+    color: var(--cat-navy-deep) !important;
+}
+
+/* Dark mode: dropdown panel text must be light */
+[data-theme="dark"] ul.dropdown-menu li a {
+    color: var(--primary) !important;
+}
+
+[data-theme="dark"] ul.dropdown-menu li a:hover,
+[data-theme="dark"] ul.dropdown-menu li a.active {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] ul.dropdown-menu {
+    border-top-color: #5588bb;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.45);
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
 .hero-section {
     position: relative;
     width: 100%;
-    min-height: 450px;
+    min-height: 480px;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -66,11 +203,8 @@
 
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    inset: 0;
+    background: linear-gradient(160deg, rgba(0,20,51,0.65) 0%, rgba(0,30,70,0.45) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,62 +213,92 @@
 }
 
 .hero-content {
-    max-width: 800px;
-    padding: 20px;
+    max-width: 700px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 18px;
 }
 
-.hero-emblem-container {
-    margin-bottom: 20px;
+/* Floating logo */
+@keyframes float {
+    0%, 100% { transform: translateY(0px);   }
+    50%       { transform: translateY(-14px); }
+}
+
+.hero-emblem-wrap {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .hero-emblem {
-    width: 150px !important;
-    height: 150px !important;
+    width: 160px !important;
+    height: 160px !important;
     border-radius: 50% !important;
-    border: 4px solid white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 4px solid rgba(255,255,255,0.85);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.55);
     background-color: white;
-    object-fit: cover !important; /* Changed to cover for perfect circle */
+    object-fit: cover !important;
+    animation: float 5s ease-in-out infinite;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.4));
 }
 
-.hero-title {
-    font-size: 2.5rem !important;
-    font-weight: 800 !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    margin-bottom: 25px !important;
-    color: white !important;
+.hero-tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.92);
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    letter-spacing: 0.03em;
+}
+
+/* Hero buttons */
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-button {
     display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--theme);
+    padding: 12px 28px;
+    background-color: var(--cat-navy);
     color: white !important;
     text-decoration: none !important;
     font-weight: 700;
     border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.06em;
+    font-size: 0.85rem;
 }
 
 .hero-button:hover {
-    background-color: #002244;
+    background-color: var(--cat-navy-deep);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
 }
 
-/* Content Spacing */
-.post-content h1, .post-content h2, .post-content h3 {
-    margin-top: 15px;
+.hero-button--secondary {
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,0.75);
+}
+
+.hero-button--secondary:hover {
+    background-color: rgba(255,255,255,0.15);
+    border-color: white;
+}
+
+/* ============================================================
+   CONTENT SPACING
+   ============================================================ */
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -142,7 +306,57 @@
     margin-bottom: 12px;
 }
 
-/* Slideshow Container (Legacy, can be removed later) */
+/* ============================================================
+   FOOTER CONTACT BAND
+   ============================================================ */
+.footer {
+    border-top: 2px solid rgba(0, 51, 102, 0.15);
+    padding-top: 0;
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    background-color: var(--cat-navy);
+    color: rgba(255,255,255,0.90);
+    padding: 32px 40px;
+    font-size: 0.88rem;
+    line-height: 1.75;
+}
+
+.footer-contact strong {
+    color: #ffffff;
+    font-size: 0.92rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.footer-contact em {
+    color: rgba(255,255,255,0.65);
+    font-style: normal;
+    font-size: 0.82rem;
+}
+
+.footer-contact a {
+    color: #a8c8f0 !important;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.footer-copy {
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 0.80rem;
+}
+
+/* ============================================================
+   SLIDESHOW (hidden — replaced by hero)
+   ============================================================ */
 .slideshow-container {
-    display: none; /* Hidden as per hero migration */
+    display: none;
 }

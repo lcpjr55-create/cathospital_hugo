@@ -1,6 +1,5 @@
 ---
 title: "Wellness and Preventative Care"
-date: 2026-04-15
 draft: false
 ---
 
