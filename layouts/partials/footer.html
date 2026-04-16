@@ -2,24 +2,24 @@
 <footer class="footer">
     <div class="footer-contact">
         <div class="footer-col">
-            <strong>{{ site.Data.contact.name }}</strong><br>
-            {{ site.Data.contact.address }}<br>
-            {{ site.Data.contact.city }}<br>
-            <a href="tel:+19194895142">{{ site.Data.contact.phone }}</a>
+            <strong>{{ hugo.Data.contact.name }}</strong><br>
+            {{ hugo.Data.contact.address }}<br>
+            {{ hugo.Data.contact.city }}<br>
+            <a href="tel:+19194895142">{{ hugo.Data.contact.phone }}</a>
             &nbsp;·&nbsp;
-            Fax {{ site.Data.contact.fax }}
+            Fax {{ hugo.Data.contact.fax }}
         </div>
         <div class="footer-col">
             <strong>Hours</strong> <em>(by appointment)</em><br>
-            {{ site.Data.contact.hours.weekdays }}<br>
-            {{ site.Data.contact.hours.saturday }}<br>
-            {{ site.Data.contact.hours.sunday }}
+            {{ hugo.Data.contact.hours.weekdays }}<br>
+            {{ hugo.Data.contact.hours.saturday }}<br>
+            {{ hugo.Data.contact.hours.sunday }}
         </div>
         <div class="footer-col">
             <strong>After-Hours Emergency</strong><br>
-            {{ site.Data.contact.emergency.name }}<br>
-            {{ site.Data.contact.emergency.address }}<br>
-            <a href="tel:+19194890615">{{ site.Data.contact.emergency.phone }}</a>
+            {{ hugo.Data.contact.emergency.name }}<br>
+            {{ hugo.Data.contact.emergency.address }}<br>
+            <a href="tel:+19194890615">{{ hugo.Data.contact.emergency.phone }}</a>
         </div>
     </div>
     <div class="footer-copy">

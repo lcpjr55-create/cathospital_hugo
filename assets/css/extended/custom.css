@@ -397,6 +397,13 @@ ul.dropdown-menu li a.active {
 }
 
 /* ============================================================
+   DROPDOWN TOGGLE BUTTON (mobile tap target only — hidden on desktop)
+   ============================================================ */
+.dropdown-toggle {
+    display: none;
+}
+
+/* ============================================================
    HAMBURGER BUTTON
    ============================================================ */
 .hamburger {

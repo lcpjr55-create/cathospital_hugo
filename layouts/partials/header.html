@@ -5,9 +5,9 @@
                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"></path>
             </svg>
-            {{ site.Data.contact.phone }}
+            {{ hugo.Data.contact.phone }}
         </a>
-        <span class="header-phone-hours">{{ site.Data.contact.hours.weekdays }} &nbsp;·&nbsp; {{ site.Data.contact.hours.saturday }}</span>
+        <span class="header-phone-hours">{{ hugo.Data.contact.hours.weekdays }} &nbsp;·&nbsp; {{ hugo.Data.contact.hours.saturday }}</span>
     </div>
     <nav class="header-nav">
         <div class="logo">
@@ -79,15 +79,17 @@
                     <span{{- if eq $menu_item_url $page_url }} class="active"{{- end }}>
                         {{- .Pre }}{{- .Name }}{{ .Post -}}
                     </span>
-                </a>
-                {{- if .HasChildren }}
-                <button class="dropdown-toggle" aria-label="Toggle {{ .Name }} submenu" aria-expanded="false">
-                    <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                    {{- if .HasChildren }}
+                    <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
-                </button>
+                    {{- end }}
+                </a>
+                {{- if .HasChildren }}
+                {{/* Mobile-only tap target — zero height on desktop, absolute overlay on mobile */}}
+                <button class="dropdown-toggle" aria-label="Toggle {{ .Name }} submenu" aria-expanded="false" tabindex="-1"></button>
                 <ul class="dropdown-menu">
                     {{- range .Children }}
                     {{- $child_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
