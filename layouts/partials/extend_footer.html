@@ -1,0 +1,36 @@
+<script>
+(function () {
+    // ── Hamburger toggle ──────────────────────────────────────
+    var hamburger = document.getElementById('hamburger-toggle');
+    var menu = document.getElementById('menu');
+    if (hamburger && menu) {
+        hamburger.addEventListener('click', function () {
+            var open = menu.classList.toggle('mobile-open');
+            hamburger.setAttribute('aria-expanded', open);
+            hamburger.classList.toggle('is-open', open);
+        });
+    }
+
+    // ── Mobile dropdown toggle (caret button) ─────────────────
+    document.querySelectorAll('.dropdown-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var li = btn.closest('li');
+            var open = li.classList.toggle('expanded');
+            btn.setAttribute('aria-expanded', open);
+        });
+    });
+
+    // ── Desktop: keep hover behaviour; caret is visual only ───
+    // On desktop the CSS :hover handles dropdowns — nothing to do.
+
+    // ── Close mobile menu on outside click ────────────────────
+    document.addEventListener('click', function (e) {
+        if (menu && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+            menu.classList.remove('mobile-open');
+            hamburger.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', false);
+        }
+    });
+})();
+</script>

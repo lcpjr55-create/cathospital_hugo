@@ -360,3 +360,183 @@ ul.dropdown-menu li a.active {
 .slideshow-container {
     display: none;
 }
+
+/* ============================================================
+   PHOTO GALLERY (tour page)
+   ============================================================ */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.photo-gallery p {
+    margin: 0;
+    line-height: 0;
+}
+
+.photo-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+    line-height: 0;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.photo-gallery a:hover img {
+    transform: scale(1.04);
+    opacity: 0.92;
+}
+
+/* ============================================================
+   HAMBURGER BUTTON
+   ============================================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--cat-navy);
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+[data-theme="dark"] .hamburger span {
+    background-color: var(--primary);
+}
+
+/* Animate to X when open */
+.hamburger.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2) { opacity: 0; }
+.hamburger.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ============================================================
+   MOBILE NAVIGATION
+   ============================================================ */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px 0 16px;
+        gap: 0;
+        overflow: visible !important;
+    }
+
+    #menu.mobile-open {
+        display: flex;
+    }
+
+    /* Top-level items full width */
+    #menu > li {
+        width: 100%;
+        margin-inline-start: 0 !important;
+        border-bottom: 1px solid rgba(0,51,102,0.10);
+    }
+
+    #menu > li > a {
+        padding: 10px 16px;
+        justify-content: space-between;
+    }
+
+    /* Caret button in mobile */
+    .dropdown-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px 16px;
+        color: var(--cat-navy);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    [data-theme="dark"] .dropdown-toggle {
+        color: var(--primary);
+    }
+
+    li.has-dropdown {
+        position: relative;
+    }
+
+    /* Mobile dropdown: inline, not absolute */
+    ul.dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        box-shadow: none !important;
+        border-top: none !important;
+        border-radius: 0 !important;
+        background: rgba(0,51,102,0.05) !important;
+        display: none;
+        padding: 4px 0;
+        min-width: 0;
+    }
+
+    [data-theme="dark"] ul.dropdown-menu {
+        background: rgba(255,255,255,0.05) !important;
+    }
+
+    li.has-dropdown.expanded > ul.dropdown-menu {
+        display: block;
+    }
+
+    ul.dropdown-menu li a {
+        padding: 8px 28px;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-caret {
+        transition: transform 0.2s ease;
+    }
+
+    li.has-dropdown.expanded .dropdown-caret {
+        transform: rotate(180deg);
+    }
+
+    /* Hide desktop hover behaviour on mobile */
+    li.has-dropdown:hover ul.dropdown-menu {
+        display: none;
+    }
+
+    li.has-dropdown.expanded > ul.dropdown-menu {
+        display: block !important;
+    }
+
+    /* Header phone strip wraps on small screens */
+    .header-phone {
+        flex-direction: column;
+        gap: 2px;
+        padding: 8px 16px;
+    }
+
+    .header-phone-hours {
+        font-size: 0.72rem;
+    }
+}

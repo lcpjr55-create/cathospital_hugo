@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'The Cat Hospital of Durham & Chapel Hill'
 theme = "PaperMod"
 
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
 [params]
     defaultTheme = "auto"
     ShowReadingTime = false

@@ -1,6 +1,6 @@
 ---
 title: "Home 2"
-draft: false
+draft: true
 ---
 
 ![Picture](/images/7/5/8/2/75820791/logo.jpg) ![Picture](/images/7/5/8/2/75820791/7137406_1_orig.jpg) ![Picture](/images/7/5/8/2/75820791/kitties_2_orig.jpg) |  ![Picture](/images/7/5/8/2/75820791/cat-friendly-logo-gold.png)  
