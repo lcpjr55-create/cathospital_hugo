@@ -13,11 +13,15 @@ theme = "PaperMod"
     ShowShareButtons = false
     ShowPostNavLinks = false
     ShowBreadCrumbs = false
+    description = "Feline-only veterinary clinic in Durham & Chapel Hill, NC. Full-service cat care: wellness, surgery, dental, boarding, and emergency referrals."
 
     [params.label]
         text = "Home"
         icon = "/images/logo_1.jpeg"
         iconHeight = 60
+
+    [params.assets]
+        favicon = "/images/logo_1.jpeg"
 
 # ── About ─────────────────────────────────────────────────────
 [[menu.main]]

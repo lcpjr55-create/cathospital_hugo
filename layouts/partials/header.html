@@ -90,7 +90,7 @@
                 {{- if .HasChildren }}
                 {{/* Mobile-only tap target — zero height on desktop, absolute overlay on mobile */}}
                 <button class="dropdown-toggle" aria-label="Toggle {{ .Name }} submenu" aria-expanded="false" tabindex="-1"></button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu{{- if eq .Identifier "client-center" }} dropdown-menu--wide{{- end }}">
                     {{- range .Children }}
                     {{- $child_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
                     <li>
