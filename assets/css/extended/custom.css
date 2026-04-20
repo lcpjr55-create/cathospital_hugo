@@ -537,6 +537,78 @@ li.has-dropdown:focus-within ul.dropdown-menu--wide {
 }
 
 /* ============================================================
+   CLIENT CENTER QUICK LINKS
+   ============================================================ */
+.client-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.client-link-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 51, 102, 0.12);
+    background: var(--entry, #fff);
+    text-decoration: none !important;
+    color: var(--primary) !important;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.client-link-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    border-color: var(--cat-teal);
+}
+
+.client-link-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(26, 155, 148, 0.10);
+    color: var(--cat-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.client-link-text strong {
+    font-size: 0.95rem;
+    color: var(--cat-navy);
+    font-weight: 700;
+}
+
+.client-link-text span {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    line-height: 1.45;
+}
+
+[data-theme="dark"] .client-link-card {
+    border-color: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .client-link-text strong {
+    color: var(--primary);
+}
+
+[data-theme="dark"] .client-link-icon {
+    background: rgba(26, 155, 148, 0.15);
+}
+
+/* ============================================================
    PHOTO GALLERY (tour page)
    ============================================================ */
 .photo-gallery {
