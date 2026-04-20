@@ -14,6 +14,25 @@
 }
 
 /* ============================================================
+   CAT SILHOUETTE BACKGROUND PATTERN
+   ============================================================ */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url('/images/cat-pattern.svg');
+    background-size: 180px 200px;
+    opacity: 0.045;
+}
+
+[data-theme="dark"] body::before {
+    filter: invert(1);
+    opacity: 0.06;
+}
+
+/* ============================================================
    STICKY HEADER
    ============================================================ */
 .header {
@@ -325,6 +344,59 @@ li.has-dropdown:focus-within ul.dropdown-menu--wide {
 
 .post-content p {
     margin-bottom: 12px;
+}
+
+/* ============================================================
+   DECORATIVE DIVIDERS
+   ============================================================ */
+.post-content hr {
+    border: none;
+    border-top: 1px solid rgba(0, 51, 102, 0.15);
+    margin: 28px auto;
+    position: relative;
+    overflow: visible;
+}
+
+.post-content hr::after {
+    content: '✦';
+    position: absolute;
+    top: -0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--theme);
+    padding: 0 12px;
+    color: rgba(0, 51, 102, 0.30);
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+}
+
+[data-theme="dark"] .post-content hr {
+    border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .post-content hr::after {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================================
+   TEAM BIO BLOCKQUOTES
+   ============================================================ */
+.post-content blockquote {
+    border-left: 3px solid var(--cat-teal);
+    background: rgba(26, 155, 148, 0.05);
+    border-radius: 0 6px 6px 0;
+    padding: 10px 18px;
+    margin: 16px 0;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.post-content blockquote p {
+    margin: 0;
+}
+
+[data-theme="dark"] .post-content blockquote {
+    background: rgba(26, 155, 148, 0.08);
 }
 
 /* ============================================================

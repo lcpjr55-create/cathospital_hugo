@@ -39,15 +39,6 @@ Dr. Edwards-Seal recently focused her practice on feline medicine, appreciating 
 
 ---
 
-### Rachel Davis, DVM
-
-![Dr. Rachel Davis](/images/7/5/8/2/75820791/img-20161207-125758_orig.jpg)
-
-Originally from the Chicago suburbs, Dr. Davis moved to North Carolina from Maryland in 1997 and graduated from NCSU College of Veterinary Medicine in 2001. She has since worked in small animal practice in Chatham County and Cary. Her interests include dentistry, client education, pain management, soft tissue surgery, and wound care. She has completed extensive continuing education in feline dentistry.
-
-> Rachel and her husband Clark live in Cary with their daughter, their dog Edie, and cats Sid, Pygmonkey, and Fuzz Button. In her free time she enjoys swimming, reading, knitting, and sewing.
-
----
 
 ### Stacy — Veterinary Assistant
 
