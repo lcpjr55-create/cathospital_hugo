@@ -10,7 +10,7 @@
             <p class="hero-tagline">{{ . }}</p>
             {{- end }}
             <div class="hero-actions">
-                <a href="/appointments" class="hero-button">Book an Appointment</a>
+                <a href="/appointments" class="hero-button">Request an Appointment</a>
                 {{- with .Get "buttonLink" }}
                 <a href="{{ . }}" class="hero-button hero-button--secondary"
                    {{- if hasPrefix . "http" }} target="_blank" rel="noopener"{{- end }}>
