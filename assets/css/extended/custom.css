@@ -333,6 +333,33 @@ li.has-dropdown:focus-within ul.dropdown-menu--wide {
 }
 
 /* ============================================================
+   CAT PAW ANIMATION (sprite flipbook, real photo)
+   ============================================================ */
+.hero-cat-anim {
+    position: absolute;
+    bottom: 90px;
+    left: calc(50% - 220px);
+    width: 200px;
+    height: 220px;
+    background-image: url('/images/catpaw-sprite.png');
+    background-repeat: no-repeat;
+    background-size: 200px 1320px;
+    background-position: 0 0;
+    animation: catpaw-grab 2.4s steps(6) infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes catpaw-grab {
+    from { background-position: 0 0; }
+    to   { background-position: 0 -1320px; }
+}
+
+@media (max-width: 640px) {
+    .hero-cat-anim { display: none; }
+}
+
+/* ============================================================
    CONTENT SPACING
    ============================================================ */
 .post-content h1,
