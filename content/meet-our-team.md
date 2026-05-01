@@ -19,7 +19,7 @@ Her professional memberships include the American Association of Feline Practiti
 
 Dr. Szymkowski has been a pet therapy volunteer at WakeMed Hospitals since 1993, visiting patients every Thursday with her dog Ivey. She is an avid runner who competes regionally from the 800m to the half marathon with the Carolina Godiva Track Club.
 
-> She and her husband Lindsey share their home with dogs Ivey and Peppermint Patty, and cats Marigold, Tony, Clark, Maurice, Celina, Amelie, and Wall-E — plus occasional rescue and rehabilitation animals.
+> She and her husband Lindsey share their home with dogs Marcie & Peppermint Patty, and cats Sylvester, Wyatt & Doc, Peggy & Alexander & Angelica, Donnie, Moochie, Wall-E — plus occasional rescue and rehabilitation animals.
 
 ---
 
@@ -42,11 +42,11 @@ Dr. Edwards-Seal recently focused her practice on feline medicine, appreciating 
 
 ### Stacy — Veterinary Assistant
 
-![Stacy](/images/7/5/8/2/75820791/d4ede17c-fa80-4aa2-80cc-cc8b7809e8fd_1_orig.jpg)
+![Lucy, Stacy's Black Mouth Cur](/images/stacy-lucy.jpeg)
 
 Stacy came to us as a client first — now she works both behind the scenes and up front. She has been a groomer in the area for several years and brings that hands-on animal care experience to everything she does here.
 
-> Stacy has a Yorkie named Jackson and several cats: Arlin, Thomas J, Javelin, and Voodoo. She is also a dedicated Mets fan.
+> Stacy has an adorable Black Mouth Cur named Lucy (pictured). She is a dedicated Mets fan.
 
 ---
 
@@ -57,16 +57,6 @@ Stacy came to us as a client first — now she works both behind the scenes and 
 WRay is our weekend and holiday anchor. He is here every weekend caring for our feline guests and is a true animal advocate — when he is not with us, he volunteers with Safe Haven for Cats.
 
 > WRay shares his home with two cats, Anime and Calliope.
-
----
-
-### Denise — Veterinary Assistant
-
-![Denise](/images/7/5/8/2/75820791/img-2078_orig.jpeg)
-
-Born in Maryland with 24 years of retail experience, Denise moved to North Carolina in 2011 to pursue veterinary technology. She graduated from the Veterinary Medical Technology program at Central Carolina Community College in 2014.
-
-> Denise has two dogs and three cats. Her hobbies include walking, reading, and playing piano.
 
 ---
 

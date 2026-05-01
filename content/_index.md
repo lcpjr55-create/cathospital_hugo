@@ -9,8 +9,6 @@ draft: false
 
 The Cat Hospital of Durham and Chapel Hill is a full-service veterinary clinic that provides care exclusively for felines in a calm and friendly environment. From your kitten to your senior cat, we are here to help with all of your cat's medical needs. We offer [wellness and preventative care](/wellness-and-preventative-care), [emergency care referrals](/emergency-care), [boarding](/boarding), and grooming.
 
-Each month we are delighted to feature one of our special feline patients. This month's star is **Lola**. This pretty girl came to us as a stray kitten and now has a wonderful, loving home.
-
 ---
 
 [The Cat Hospital Participates in a Progressive Study for Cats with Osteoarthritis](/study)
